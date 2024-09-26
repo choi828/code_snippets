@@ -1,0 +1,9 @@
+# code_snippets/requirements.txt
+
+numpy
+scikit-learn
+tensorflow
+keras
+torch
+PyYAML
+joblib

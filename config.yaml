@@ -1,0 +1,25 @@
+data:
+  path: "data/"
+  train_ratio: 0.8
+  val_ratio: 0.1
+  test_ratio: 0.1
+
+model:
+  input_dim: 100
+  output_dim: 10
+  hidden_units: [64, 128]
+  dropout_rates: [0.5, 0.5]
+  activation: "relu"
+  output_activation: "softmax"
+  n_estimators: 100            # Scikit-learn RandomForestClassifier 용
+  max_depth: null              # Scikit-learn RandomForestClassifier 용
+  random_state: 42
+
+training:
+  batch_size: 32
+  epochs: 50
+  learning_rate: 0.001
+  optimizer: "adam"
+  loss: "categorical_crossentropy"
+  metrics: ["accuracy"]
+  early_stopping_patience: 5
